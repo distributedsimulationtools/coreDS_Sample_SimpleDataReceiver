@@ -1,0 +1,118 @@
+{
+   "ConfigType" : 0,
+   "DISConfig" : {
+      "AutomaticEntityStateUpdateManagement" : true,
+      "DISAppNumber" : 0,
+      "DISDestinationAddress" : "192.168.1.255",
+      "DISDisVer" : 5,
+      "DISEnableExpertMode" : false,
+      "DISExerciseID" : 1,
+      "DISJoinMulticastGroup" : false,
+      "DISMulticastAddress" : "0.0.0.0",
+      "DISNIA" : "192.168.1.76",
+      "DISPort" : 0,
+      "DISRcvBuffSize" : 2048,
+      "DISSiteNumber" : 1,
+      "DISUseAsyncIO" : false,
+      "EntityStatePDUUpdateFrequency" : 5,
+      "KeepAliveTimeout" : 5,
+      "SendCompleteEntityStatePDUPeriodically" : false,
+      "UseESUForKeepAlive" : false
+   },
+   "Federate" : {
+      "CreateFederationExecution" : true,
+      "DeleteFederationExecution" : true,
+      "DiscoverEverything" : false,
+      "DisplayReceivedCallbacks" : false,
+      "EnableAsynchronousDelivery" : false,
+      "EnableProvideAttributeValues" : false,
+      "EnableSynchronization" : false,
+      "EnableTimeConstrained" : false,
+      "EnableTimeRegulation" : false,
+      "FOMFileList" : [
+         "RPR_FOM_v2.0_1516-2010.xml"
+      ],
+      "FederateName" : "MyFederation",
+      "FederateType" : "Receiver",
+      "FederationName" : "Receiver",
+      "HLACallbackDeliveryMecanism" : "HLA_EVOKED",
+      "LogicalTimeImplementationName" : "Double",
+      "LookAhead" : "0.10",
+      "MIMmodule" : "",
+      "MaximumCallbackTime" : 0.10,
+      "MinimumCallbackTime" : 0.0,
+      "ObjectPublishList" : [
+         {
+            "Attributes" : [ "Spatial" ],
+            "Object" : "HLAobjectRoot.BaseEntity.PhysicalEntity.Platform"
+         }
+      ],
+      "ObjectSubcribeList" : [
+         {
+            "Attributes" : [ "Spatial" ],
+            "Object" : "HLAobjectRoot.BaseEntity.PhysicalEntity.Platform"
+         }
+      ],
+      "OptionalFOMFileList" : [
+         "FOM_PROCOLL_SHYVA.xml"
+      ],
+      "RegisterSynchronizationPoint" : false,
+      "RequestAttributeValuesUpdate" : true,
+      "ResignAction" : "Delete Objects",
+      "StartAtGALT" : false,
+      "SynchronizationPointName" : "SyncPoint",
+      "TimeStep" : "1.00"
+   },
+   "Metadata" : {
+      "FedInfoAppDom" : "",
+      "FedInfoMOMVer" : "",
+      "FedInfoModDate" : "",
+      "FedInfoName" : "",
+      "FedInfoPurposes" : "",
+      "FedInfoSponsor" : "",
+      "FedInfoType" : "",
+      "FedInfoVersion" : "",
+      "POCEmail" : "",
+      "POCFirstName" : "",
+      "POCHonorName" : "",
+      "POCLastName" : "",
+      "POCOrganisationName" : "",
+      "POCPhoneNumber" : ""
+   },
+   "ObjectLinkSimLocalIn" : [
+      {
+         "HLAobjectRoot.BaseEntity.PhysicalEntity.Platform" : [ "ItemInput" ]
+      }
+   ],
+   "ObjectMappingIn" : [
+      {
+         "HLAobjectRoot.BaseEntity.PhysicalEntity.Platform" : [
+            {
+               "HLAobjectRoot.BaseEntity.PhysicalEntity.Platform" : "ItemInput"
+            },
+            {
+               "Spatial" : [
+                  {
+                     "WorldLocation.X" : "X"
+                  },
+                  {
+                     "WorldLocation.Y" : "Y"
+                  },
+                  {
+                     "WorldLocation.Z" : "Z"
+                  }
+               ]
+            }
+         ]
+      }
+   ],
+   "RTIConfiguration" : {
+      "Compiler" : "VC140",
+      "DLLName" : "DLC_1516e_VC140_x64d.dll",
+      "LocalDesignatorsExtra" : "",
+      "Manufacturer" : "DLC",
+      "OverEncDecFOM" : "",
+      "RTILibPath" : "",
+      "Standard" : "1516e"
+   }
+}
